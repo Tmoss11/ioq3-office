@@ -39,6 +39,8 @@ RUN apt-get update && apt-get install -y    \
 RUN wget ftp://ftp.idsoftware.com/idstuff/quake3/linux/linuxq3apoint-1.32b-3.x86.run
 RUN sh linuxq3apoint-1.32b-3.x86.run --nox11 --target /usr/lib/ioquake3
 RUN ln -s /pak0.pk3 /usr/lib/ioquake3/baseq3/pak0.pk3
+RUN ln -s /server.cfg /usr/lib/ioquake3/baseq3/server.cfg
+
 
 # Entrypoint
 COPY entrypoint.sh /
