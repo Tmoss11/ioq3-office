@@ -48,4 +48,4 @@ RUN chmod a+x /entrypoint.sh
 RUN useradd -G audio,video -m unamedplayer
 USER unamedplayer
 
-CMD sh /entrypoint.sh
+CMD sh /entrypoint.sh server +map q3tourney2 +exec server.cfg
