@@ -48,4 +48,6 @@ RUN chmod a+x /entrypoint.sh
 RUN useradd -G audio,video -m unamedplayer
 USER unamedplayer
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD sh /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash"]
