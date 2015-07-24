@@ -49,5 +49,3 @@ RUN useradd -G audio,video -m unamedplayer
 USER unamedplayer
 
 CMD sh /entrypoint.sh
-
-ENTRYPOINT ["/bin/bash"]
